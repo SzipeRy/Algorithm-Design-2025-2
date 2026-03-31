@@ -1,7 +1,7 @@
 import qrcode
 
 url = input().strip()
-file_path = "D:\\Thunn\\ESC Document\\Integration Bee 2026\\opcqrcode.png"
+file_path = "C:\\File\\Integration Bee 2026\\qrentry.png"
 
 qr = qrcode.QRCode()
 qr.add_data(url)
