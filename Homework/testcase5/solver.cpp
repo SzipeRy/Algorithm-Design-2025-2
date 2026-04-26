@@ -298,7 +298,7 @@ int main() {
     int min_length = 2e9;
 
     // Use full 1.85 seconds to run the ultra-fast decoupled permutations
-    while (chrono::duration<double>(chrono::high_resolution_clock::now() - start_time).count() < 1200.0) {
+    while (chrono::duration<double>(chrono::high_resolution_clock::now() - start_time).count() < 5400.0) {
         int strat_type = global_rng() % 5;
         string res = simulate_order(get_strategy(strat_type));
         
