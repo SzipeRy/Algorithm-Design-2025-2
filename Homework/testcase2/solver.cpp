@@ -322,7 +322,7 @@ int main() {
     int min_length = 2e9;
 
     // Run heavily pruned randomizations continuously until exactly 1.85 seconds
-    while (chrono::duration<double>(chrono::high_resolution_clock::now() - start_time).count() < 600.0) {
+    while (chrono::duration<double>(chrono::high_resolution_clock::now() - start_time).count() < 5400.0) {
         int strat_type = global_rng() % 5;
         string res = simulate_order(get_strategy(strat_type));
         

@@ -45,6 +45,7 @@ void solve(int idx, int sum)
     if (idx == n)
     {
         out = std::max(out, sum);
+        return;
     }
     pick[idx] = 1;
     solve(idx+1,sum + c[idx]);
